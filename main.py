@@ -7,9 +7,10 @@ def main():
     box2 = Box(50,50, 10, 10)
     clock = pg.time.Clock()
     FPS = 60
+    boxes = [box1, box2]
     while run:
-        #mousex, mousey = 
-        
+        for box in boxes:
+             box.update_pos()
         if box1.check_collision(box2):
             box1.color = (0, 255, 0)
         else:
