@@ -17,5 +17,4 @@ class Box:
         check_collision_x = other.centralx+other.width >= self.centralx and other.centralx <= self.centralx+self.width
         return check_collision_y and check_collision_x
     def draw(self, screen):
-        
         pg.draw.rect(screen, self.color, (self.centralx, self.centraly, self.width, self.height))
